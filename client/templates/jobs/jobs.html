@@ -1,0 +1,144 @@
+<template name="jobs">
+	  <div id="jobs-nav" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#site-nav" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand scrollto">HBio<br/><span>Harvard Undergraduate Biotechnology Association</span></a>
+      </div>
+      <div id="site-nav" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/events">Events</a></li>
+          {{#if currentUser}}
+            <li><a class="logout" href="#">Sign Out</a></li>
+          
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+	
+
+	<div id="portfolio-header" class="porty text-center">
+      <h1 class="section-title scrollimation scale-in">Open<span> Internships</span><i class="icon-pencil"></i></h1>
+      <!--==== Portfolio Filters ====
+      -->
+      <div id="filter-works">
+        <ul>
+          <li class="active"><a href="#fake" data-filter="*">All</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container masonry-wrapper scrollimation fade-in">
+      <div id="projects-container">
+
+
+        <a href="#" data-images="assets/jobs/novartis.jpeg" class="project-item tech web-design icons"><img src="assets/jobs/novartis.jpeg" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>Novartis</strong></h2>
+            <!--Project Title 
+            -->
+            
+          </div>
+          <div class="sr-only project-description">
+            <p>Scholars work on their own project with the guidance of a NIBR scientist. NIBR's research covers many disease, science, and technology areas that allow us to closely match your specific interests with one of our labs.
+            	<br>
+            http://www.nibr.novartis.com/careers/internships/internships_us.shtml</p>
+          </div>
+        </a>
+        <a href="#" data-images="assets/monsanto.jpg" class="project-item president ui-kits"><img src="assets/jobs/monsanto.jpg" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>Monsanto</strong></h2>
+            <!--Project Title 
+            -->
+          </div>
+          <div class="sr-only project-description">
+            <p>The successful candidate will have the opportunity to work with the Monsanto Company Government Affairs team in Washington, D.C., assisting with projects, events and research. <br>https://www.internmatch.com/internships/monsanto--43/government-affairs-intern?i=0&location=216022&page=-1&s=-1</p>
+          </div></a>
+
+          <a href="#" data-images="assets/jobs/merck.jpg" class="project-item finance ui-kits"><img src="assets/jobs/genentech.jpg" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>Genentech</strong></h2>
+            <!--Project Title 
+            -->
+            <!---->
+          </div>
+          <div class="sr-only project-description">
+            <p>As an intern or co-op, you will contribute daily to important projects and work side-by-side with biotech industry experts in a flexible and diverse work environment. <br> http://www.gene.com/careers/academic-programs/interns-co-ops</p>
+          </div></a>
+
+          <a href="#" data-images="assets/jobs/genentech.jpg" class="project-item events web-design"><img src="assets/jobs/merck.jpg" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>Merck</strong></h2>
+            <!--Project Title 
+            -->
+          </div>
+          <div class="sr-only project-description">
+            <p>Join a program that provides exemplary students with the opportunity to work on meaningful assignments and gain real word experiences. <br> https://www.merck.com/careers/life-at-merck/students-and-graduates.html </p>
+          </div></a>
+
+          <a href="#" data-images="assets/jobs/regeneron.jpg" class="project-item events icons ui-kits"><img src="assets/jobs/regeneron.jpg" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>Regeneron</strong></h2>
+            <!--Project Title 
+            -->
+          </div>
+          <div class="sr-only project-description">The internship will provide an opportunity to acquire knowledge in the drug product/device area of the pharmaceutical process. The intern will be providing support for various deviations on all the phase 3 products and commercial products. Support includes (but not limited to) analytical testing, statistical analysis, observing filling manufacturing deviations, analyzing related risks that could affect the patient, and communicating with current filling CMOs. The intern will also learn about the company’s on site deviation system, and appropriate technical writing skills. Other projects also include acquiring knowledge on the current industry trends, and accomplishing development work with primary pack components. <br> https://www.internmatch.com/internships/regeneron--48/intern-process-sciences?i=4&location=222079&s=0.5032222</div>
+          <!--==== Project Preview HTML ====
+          --></a>
+        <!--End Project Item 
+        --><a href="#" data-images="assets/jim2.jpg" class="project-item relations ui-kits"><img src="assets/jobs/biogen.png" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>Biogen Idec</strong></h2>
+            <!--Project Title 
+            -->
+            <!--Project Subtitle 
+            -->
+          </div>
+          <div class="sr-only project-description">
+            <p>We offer students the opportunity to come inside the doors of one of the largest biotech companies in the world and learn first-hand how teamwork, collaboration and commitment to providing the best service to our patients have helped drive our Company's success. <br>http://www.biogenidec.com/careers_university_internships.aspx?ID=5840 </p>
+          </div>
+          <!--==== Project Preview HTML ====
+          --></a>
+        <!--End Project Item 
+        --><a href="#" data-images="assets/sora2.jpg" class="project-item publicity ui-kits"><img src="assets/jobs/aaipharma.jpg" alt="" class="img-responsive project-image"/>
+          <!--Project thumb 
+          -->
+          <div class="hover-mask">
+            <h2 class="project-title"><strong>AAIPharma</strong></h2>
+            <!--Project Title 
+            -->
+          </div>
+          <div class="sr-only project-description">
+            <p>We are seeking a college student to work as our Engineering Intern throughout the fall/winter! <br>https://www.internmatch.com/internships/aaipharma--8/college-intern?i=1&location=231580&page=-1&s=-1 </p>
+          </div></a>
+
+      </div>
+    </div>
+    <div id="project-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+          </div>
+          <div class="modal-body">
+      
+            <h1></h1>
+            <div class="project-descr"></div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</template>

@@ -1,0 +1,295 @@
+.porty {
+    margin-top: 90px;
+}
+
+
+#jobs-nav a.ir-logo {
+    margin:0;
+    margin-top:5px;
+    padding:0;
+    width:151px;
+    height:57px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url("../assets/logo.png");
+    color:#74c7d5;
+}
+
+#jobs-nav a.ir-logo span{
+    color:#74c7d5;
+    font:0/0 a;
+}
+
+
+
+#jobs-nav .navbar-toggle{
+    border:1px solid rgba(255,255,255,0.5);
+    border-radius:0;
+}
+
+#jobs-nav .icon-bar {
+    background:#fff;
+}
+
+
+#jobs-nav .navbar-brand{
+    color:#74c7d5;
+}
+
+#jobs-nav.scrolled .navbar-brand{
+    color:#74c7d5;
+}
+
+#jobs-nav{
+    background-color:white;
+    color:#74c7d5;
+    box-shadow:0 0 0px transparent;
+    -webkit-transition:background 0.3s ease-out;
+    transition:background 0.3s ease-out;
+}
+
+#jobs-nav.scrolled{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+#jobs-nav.scrolled .navbar-toggle{
+    color:#74c7d5;
+    border-color:#74c7d5;
+}
+
+#jobs-nav.scrolled .navbar-toggle .icon-bar{
+    background:#74c7d5;
+    color:#74c7d5;
+}
+
+#jobs-nav .container{
+    padding:30px 20px;
+    -webkit-transition:padding 0.5s ease-out;
+    transition:padding 0.5s ease-out;
+}
+
+#jobs-nav.scrolled .container{
+    padding:10px 20px;
+}
+
+#jobs-nav .nav a,
+#jobs-nav .nav a:active,
+#jobs-nav .nav a:hover{
+    padding:0px 10px;
+    font-size:18px;
+    line-height:54px;
+    font-weight:400;
+    background:transparent;
+    color:#74c7d5;
+}
+
+
+#jobs-nav.scrolled .nav a,
+#jobs-nav.scrolled .nav a:active,
+#jobs-nav.scrolled .nav a:hover{
+    color:#74c7d5;
+}
+
+
+#jobs-nav li{
+    background:transparent;
+    margin:0 10px;
+    border:2px solid transparent;
+}
+
+#jobs-nav .dropdown-menu a{
+    font-size:14px;
+}
+
+/* Hover Effect */
+#jobs-nav .nav a {
+    position:relative;
+}
+
+#jobs-nav .nav a:before {
+	position: absolute;
+	bottom:-5px;
+	left: 50%;
+	color: transparent;
+	content: '•';
+	text-shadow: 0 0 transparent;
+	font-size: 16px;
+	line-height:21px;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+
+#jobs-nav .nav a:hover:before,
+#jobs-nav .nav li.active a:before {
+	color: #fff;
+	text-shadow: 12px 0 #fff, -12px 0 #fff;
+}
+
+#jobs-nav.scrolled .nav a:hover:before,
+#jobs-nav.scrolled .nav li.active a:before {
+	color: #74c7d5;
+	text-shadow: 12px 0 #74c7d5, -12px 0 #74c7d5;
+}
+
+.no-textshadow #jobs-nav .nav a:before {
+	content: '• • •';
+}
+
+.no-csstransforms #jobs-nav .nav a:before {
+	margin-left:-15px;
+}
+
+
+
+@media (max-width: 768px) {
+
+#jobs-nav .navbar-brand{
+    color:#74c7d5;
+}
+
+#jobs-nav{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+#jobs-nav .navbar-toggle{
+    color:#74c7d5;
+    border-color:#74c7d5;
+}
+
+#jobs-nav .navbar-toggle .icon-bar{
+    background:#74c7d5;
+}
+
+#jobs-nav .container{
+    padding:10px 20px;
+}
+
+#jobs-nav .nav a,
+#jobs-nav .nav a:active,
+#jobs-nav .nav a:hover{
+    color:#74c7d5;
+    line-height:42px;
+    text-align:center;
+}
+
+#jobs-nav .nav a:before {
+    display:none;
+}
+
+#jobs-nav .nav a:hover,
+#jobs-nav .nav li.active a {
+    box-shadow:0 0 0 1px;
+}
+
+.jumbotron .left-col p{
+    font-size:24px;
+    line-height:28px;
+}
+
+.jumbotron .left-col p span{
+    font-size:32px;
+}
+
+.jumbotron .right-col p{
+    font-size:62px;
+    line-height:62px;
+}
+
+#main-footer ul.footer-nav{
+    margin-bottom:24px;
+}
+
+#main-footer .left-col,
+#main-footer .right-col{
+    text-align:center;
+}
+
+.modal-dialog{
+    max-width:480px;
+}
+
+.modal-body .left-col,
+.modal-body .right-col{
+    width:100%;
+}
+
+h1.section-title{
+    font-size:42px;
+    line-height:56px;
+}
+
+}
+
+@media (max-width: 479px) {
+
+.jumbotron .right-col p{
+    font-size:38px;
+    line-height:38px;
+}
+
+h1.section-title{
+    font-size:32px;
+    line-height:46px;
+}
+
+
+p {
+    font-size:16px;
+    line-height:21px;
+}
+
+.btn-theme{
+    padding:15px 40px;
+    font-size:18px;
+}
+
+#about h1 {
+    font-size:28px;
+    line-height:36px;
+}
+
+#about p {
+    font-size:21px;
+    line-height:28px;
+}
+
+
+#filter-works ul li a{
+    font-size:21px;
+    line-height:28px;
+}
+
+#contact .contact-info p,
+#contact .contact-info address{
+    font-size:16px;
+    line-height:26px;
+}
+
+
+#contact .form-control {
+    height:58px;
+    font-size:24px;
+    line-height:30px;
+}
+
+#contact .form-group [class*="icon-"] {
+    font-size:32px;
+    line-height:58px;
+
+}
+
+#contact textarea.form-control {
+    font-size:24px;
+    line-height:32px;
+    padding-top:14px;
+}
+
+}

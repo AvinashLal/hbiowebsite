@@ -1,0 +1,50 @@
+<template name="contact">  
+  <div class="container">
+      <h1 class="section-title scrollimation scale-in">Contact<span>Us</span></h1>
+      <div class="row">
+        <!--=== Contact Form ===
+        -->
+        <form id="contact-form" method="post" novalidate="novalidate" class="contact col-sm-7 scrollimation fade-left">
+          <div class="form-group">
+            <label for="contact-name" class="control-label">Name</label>
+            <div class="controls"><i class="icon-user"></i>
+              <input id="contact-name" name="contactName" placeholder="Name" type="text" data-error-empty="Please enter your name" class="form-control input-lg requiredField"/>
+            </div>
+          </div>
+          <!--End name input 
+          -->
+          <div class="form-group">
+            <label for="contact-mail" class="control-label">Email</label>
+            <div class="controls"><i class="icon-envelope"></i>
+              <input id="contact-mail" name="email" placeholder="Email Address" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address" class="form-control input-lg requiredField"/>
+            </div>
+          </div>
+          <!--End email input 
+          -->
+          <div class="form-group">
+            <label for="contact-message" class="control-label">Message</label>
+            <div class="controls"><i class="icon-comment"></i>
+              <textarea id="contact-message" name="comments" placeholder="Message" rows="5" data-error-empty="Please enter your message" class="form-control input-lg requiredField"></textarea>
+            </div>
+          </div>
+          <!--End textarea 
+          -->
+          <p>
+            <button name="submit" type="submit" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent" class="btn btn-theme btn-lg"><i class="icon-location-arrow"></i>Send</button>
+          </p>
+          <input id="submitted" type="hidden" name="submitted" value="true"/>
+        </form>
+        <!--End contact-form 
+        -->
+        <div class="col-sm-5 contact-info scrollimation fade-right">
+          <p>Contact us</p>
+          <address>HBio<br/>
+            <h2>Cambridge, MA</h2>
+          </address>
+          <ul class="socials">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</template>

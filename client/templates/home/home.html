@@ -1,0 +1,72 @@
+<template name="home">
+
+  <div id="main-nav" class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#site-nav" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" class="navbar-brand scrollto">HBio<br/><span>Harvard Undergraduate Biotechnology Association</span></a>
+      </div>
+      <div id="site-nav" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="sr-only"><a href="#home" class="scrollto">Home</a></li>
+          <li><a href="{{pathFor 'home'}}" class="scrollto">Home</a></li>
+          <li><a href="#about" class="scrollto">About</a></li>
+          <li><a href="#advisors" class="scrollto">Advisors</a></li>
+          <li><a href="#portfolio" class="scrollto">Board</a></li>
+          <li><a href="/jobs">Jobs</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="#contact" class="scrollto">Contact</a></li>
+          {{#if currentUser}}
+            <li><a class="logout" href="#">Sign Out</a></li>
+
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header id="home">
+    <div class="container">
+      <div style="height:700px;" class="row">
+      <!--   <div class="col-md-12" id="application-box">
+           <a href="https://docs.google.com/forms/d/1pHjfhLPLa8ufZthEqHk5hJ0gitqS0cUxZurc9vABGfc/viewform" target="_blank">Apply to Our Fall Comp Here!</a>
+        </div> -->
+      </div>
+    </div>
+  </header>
+
+<!-- hello -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+          <h1>Harvard Undergraduate Biotechnology Association</h1>
+          <p>is a forum for students to learn about various aspects of the biotechnology and explore the different intersections of research and industry through interactive participation and meetings with the most<strong>
+
+              powerful  </strong>people in the field.</p><a href="#portfolio" class="btn btn-theme transparent scrollto">View More</a>
+        </div>
+        <div class="col-sm-4 col-sm-offset-1 scrollimation fade-right"><img src="assets/me.jpg" alt="" class="img-responsive img-circle img-center"/></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    {{> services }}
+  </section>
+
+  <section id="advisors">
+    {{> advisors}}
+  </section>
+
+  <section id="portfolio">
+    {{> board }}
+  </section>
+
+  <section id="twitter">
+    <div class="container">
+      <div class="row scrollimation fade-in"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    {{> contact }}
+  </section>
+</template>
