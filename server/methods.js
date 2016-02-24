@@ -13,5 +13,8 @@ Meteor.methods({
       subject: subject,
       text: text
     });
+  },
+  addBoardMember: function(member) {
+    return Members.insert(member);
   }
 });

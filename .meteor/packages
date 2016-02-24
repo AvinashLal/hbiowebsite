@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 jquery
 bootstrap
 iron:router
@@ -18,4 +17,6 @@ multiply:iron-router-progress
 sacha:spin
 stevezhu:sass
 spiderable
+autopublish
+insecure
 

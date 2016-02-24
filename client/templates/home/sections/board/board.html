@@ -7,73 +7,29 @@
         <ul>
           <li class="active"><a href="#fake" data-filter="*">All</a></li>
           <li><a href="#fake" data-filter=".president">President</a></li>
+					<li><a href="#fake" data-filter=".vicepresident">Vice-President</a></li>
           <li><a href="#fake" data-filter=".finance">Finance</a></li>
-          <li><a href="#fake" data-filter=".tech">Technology</a></li>
-          <li><a href="#fake" data-filter=".events">Programming & Events</a></li>
+          <li><a href="#fake" data-filter=".technology">Technology</a></li>
+          <li><a href="#fake" data-filter=".programming">Programming & Events</a></li>
 
         </ul>
       </div>
     </div>
     <div class="container masonry-wrapper scrollimation fade-in">
       <div id="projects-container">
-
-
-
-                          <a href="#" data-images="assets/lena.png" class="president project-item ui-kits"><img src="assets/lena.png" alt="" class="img-responsive project-image"/>
-                            <!--Project thumb
-                            -->
-                            <div class="hover-mask">
-                              <h2 class="project-title"><strong>Lena Afeyan</strong>- President</h2>
-                              <!--Project Title
-                              -->
-                              <p>'17</p>
-                            </div>
-                            <div class="sr-only project-description">
-                              <p>I am a sophomore in Eliot House, potentially concentrating in Chemical and Physical Biology. I am originally from Cape Cod, specifically the village of Woods Hole, one of the marine science capitals of the world. While there, I enjoy conducting research at the Woods Hole Oceanographic Institution, going to the beach, sailing, and kitesurfing. Here at Harvard, I run the Finance Committee for HBio and am on the board of Harvard Ventures. I am very interested in the intersection of science and entrepreneurship, and look forward to bringing Harvard students into the biotech community.</p>
-                            </div></a>
-
-					
-
-
-
-												<a href="#" data-images="assets/carlo.png" class="project-item ui-kits"><img src="assets/carlo.png" alt="" class="img-responsive project-image"/>
-													<!--Project thumb
-													-->
-													<div class="hover-mask">
-														<h2 class="project-title"><strong>Carlo Bocconcelli</strong>- Vice President</h2>
-														<!--Project Title
-														-->
-														<p>'18</p>
-													</div>
-													<div class="sr-only project-description">
-														<p>I am a sophomore in Eliot House, potentially concentrating in Chemical and Physical Biology. I am originally from Cape Cod, specifically the village of Woods Hole, one of the marine science capitals of the world. While there, I enjoy conducting research at the Woods Hole Oceanographic Institution, going to the beach, sailing, and kitesurfing. Here at Harvard, I run the Finance Committee for HBio and am on the board of Harvard Ventures. I am very interested in the intersection of science and entrepreneurship, and look forward to bringing Harvard students into the biotech community.</p>
-													</div></a>
-
-					<a href="#" data-images="assets/raul2.jpg" class="project-item tech web-design icons"><img src="assets/raul1.jpg" alt="" class="img-responsive project-image"/>
-          <!--Project thumb
-          -->
-          <div class="hover-mask">
-            <h2 class="project-title"><strong>Raul Jordan</strong>- Director of Technology</h2>
-            <!--Project Title
-            -->
-            <p>'17</p>
-          </div>
-          <div class="sr-only project-description">
-            <p>Raul is a junior in Adams House studying Biomedical Engineering and Computer Science. He spends his time listening to the best club mixes and building all kinds of tech startups on the side.</p>
-          </div> </a>
-
-				<a href="#" data-images="assets/erica.png" class="project-item ui-kits"><img src="assets/erica.png" alt="" class="img-responsive project-image"/>
-						<!--Project thumb
-						-->
-						<div class="hover-mask">
-							<h2 class="project-title"><strong>Erica Budina</strong>- Chair of Internal Development</h2>
-							<!--Project Title
-							-->
-							<p>'18</p>
-						</div>
-						<div class="sr-only project-description">
-							<p></p>
-						</div></a>
+				{{#each members}}
+				  <a href="#" data-images="{{photo}}" class="{{committee}} project-item ui-kits"><img src="{{photo}}" alt="" class="img-responsive project-image"/>
+				    <!--Project thumb
+				    -->
+				    <div class="hover-mask">
+				      <h2 class="project-title"><strong>{{name}}</strong>- {{position}}</h2>
+				      <!--Project Title
+				      -->
+				      <p>{{year}}</p>
+							<p class="bio">{{bio}}</p>
+				    </div>
+				    </a>
+				{{/each}}
         </div>
     </div>
 
