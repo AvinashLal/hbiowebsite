@@ -560,6 +560,42 @@ header.jumbotron{
                 -12px 0px 0px 12px rgba(255,255,255,0.2);
 }
 
+#advisors {
+    background:#74C7D5;
+    color:#fff;
+    padding:80px 0;
+}
+
+#advisors h1 {
+    color:#fff;
+    font-size:36px;
+    line-height:42px;
+    font-weight:300;
+    margin-bottom:24px;
+    position:relative;
+}
+
+#advisors p {
+    font-size:24px;
+    line-height:36px;
+    font-weight:300;
+    margin-bottom:42px;
+}
+
+#advisors a:hover{
+    text-decoration:underline;
+} 
+
+#advisors .btn-theme.transparent {
+    font-size:18px;
+    text-decoration:none;
+}
+
+#advisors img {
+    box-shadow:12px 0px 0px 12px rgba(255,255,255,0.2),
+                -12px 0px 0px 12px rgba(255,255,255,0.2);
+}
+
 /*-----------------------
 ------Skills Styles-------
 ------------------------*/
