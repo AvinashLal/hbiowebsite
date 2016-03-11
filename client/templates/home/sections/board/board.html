@@ -17,6 +17,32 @@
     </div>
     <div class="container masonry-wrapper scrollimation fade-in">
       <div id="projects-container">
+        {{#with president}}
+           <a href="#" data-images="{{photo}}" class="{{committee}} project-item ui-kits"><img src="{{photo}}" style="height:400px;width:400px;" alt="" class="img-responsive project-image"/>
+            <!--Project thumb
+            -->
+            <div class="hover-mask">
+              <h2 class="project-title"><strong>{{name}}</strong>- {{position}}</h2>
+              <!--Project Title
+              -->
+              <p>{{year}}</p>
+              <p class="bio">{{bio}}</p>
+            </div>
+            </a>
+        {{/with}}
+        {{#with vicePresident}}
+           <a href="#" data-images="{{photo}}" class="{{committee}} project-item ui-kits"><img src="{{photo}}" style="height:400px;width:400px;" alt="" class="img-responsive project-image"/>
+            <!--Project thumb
+            -->
+            <div class="hover-mask">
+              <h2 class="project-title"><strong>{{name}}</strong>- {{position}}</h2>
+              <!--Project Title
+              -->
+              <p>{{year}}</p>
+              <p class="bio">{{bio}}</p>
+            </div>
+            </a>
+        {{/with}}
 				{{#each members}}
 				  <a href="#" data-images="{{photo}}" class="{{committee}} project-item ui-kits"><img src="{{photo}}" style="height:400px;width:400px;" alt="" class="img-responsive project-image"/>
 				    <!--Project thumb
